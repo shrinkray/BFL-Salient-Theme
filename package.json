@@ -1,0 +1,23 @@
+{
+  "name": "salient-child",
+  "version": "1.0.0",
+  "description": "WP child theme product. Improves A11y.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shrinkray/BFL-Salient-Theme.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/shrinkray/BFL-Salient-Theme/issues"
+  },
+  "homepage": "https://github.com/shrinkray/BFL-Salient-Theme#readme",
+  "devDependencies": {
+    "laravel-mix": "^6.0.49"
+  }
+}

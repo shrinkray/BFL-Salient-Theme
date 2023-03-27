@@ -8,6 +8,8 @@
 # Public Root
 !.gitignore
 
+node_modules
+
 
 # Disallow large filetypes
 *.hqx
