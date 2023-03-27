@@ -80,7 +80,7 @@ $nectar_header_options = nectar_get_header_variables();
   get_template_part( 'includes/partials/footer/body-border' );
   
 	?>
-	<div id="ajax-content-wrap">
+	<main id="ajax-content-wrap">
 <?php
 		
 		nectar_hook_after_outer_wrap_open();

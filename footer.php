@@ -42,7 +42,7 @@ get_template_part( 'includes/partials/footer/off-canvas-navigation' );
 
 ?>
 
-</div> <!--/ajax-content-wrap-->
+</main> <!--/ajax-content-wrap-->
 
 <?php
 	
