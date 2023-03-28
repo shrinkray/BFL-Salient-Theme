@@ -26,7 +26,7 @@ if ( $nectar_header_options['perm_trans'] !== '1' ||
 $nectar_header_options['perm_trans'] === '1' && $nectar_header_options['bg_header'] == 'false' || 
 $nectar_header_options['page_full_screen_rows'] === 'on' ) { ?>
 	
-	<header id="header-space" <?php echo (esc_html($header_secondary_m_attr)) ? 'data-secondary-header-display="full"' : ''; ?> data-header-mobile-fixed='<?php echo esc_attr( $nectar_header_options['mobile_fixed'] ); ?>'></header>
+	<div id="header-space" <?php echo (esc_html($header_secondary_m_attr)) ? 'data-secondary-header-display="full"' : ''; ?> data-header-mobile-fixed='<?php echo esc_attr( $nectar_header_options['mobile_fixed'] ); ?>'></div>
 	
 	<?php
 	
