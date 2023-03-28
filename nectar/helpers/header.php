@@ -1408,10 +1408,10 @@ if( ! function_exists( 'nectar_meta_viewport' ) ) {
 		global $nectar_options;
 		
 		if ( isset( $nectar_options['meta_viewport'] ) && 'scalable' === $nectar_options['meta_viewport'] ) { 
-			echo '<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5" />';
+			echo '<meta name="viewport" content="width=device-width, initial-scale= 1" />';
 		}
 		else if ( ! empty( $nectar_options['responsive'] ) && '1' === $nectar_options['responsive'] ) { 
-			echo '<meta name="viewport" content="content="width=device-width, initial-scale=1.0" />';
+			echo '<meta name="viewport" content="width=device-width, initial-scale= 1" />';
 		} else { 
 			echo '<meta name="viewport" content="width=1200" />';
 		} 

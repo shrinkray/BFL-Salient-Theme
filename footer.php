@@ -18,7 +18,7 @@ nectar_hook_before_footer_open();
 
 ?>
 
-<div id="footer-outer" <?php nectar_footer_attributes(); ?>>
+<footer id="footer-outer" <?php nectar_footer_attributes(); ?>>
 	
 	<?php
 	
@@ -32,7 +32,7 @@ nectar_hook_before_footer_open();
 	
 	?>
 	
-</div><!--/footer-outer-->
+</footer><!--/footer-outer-->
 
 <?php
 
