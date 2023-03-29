@@ -63,5 +63,4 @@ if ( $side_widget_class === 'slide-out-from-right-hover' ) {
     $desktop_social = ( ! empty( $nectar_options['enable_social_in_header'] ) && $nectar_options['enable_social_in_header'] === '1' ) ? 'false' : 'true';
     echo '<p class="bottom-text" data-has-desktop-social="' . esc_attr( $desktop_social ) . '">' . wp_kses_post( $nectar_options['header-slide-out-widget-area-bottom-text'] ) . '</p>';
   }
-  
   echo '</div><!--/bottom-meta-wrap-->';
