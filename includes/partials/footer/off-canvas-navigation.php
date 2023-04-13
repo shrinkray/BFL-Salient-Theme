@@ -108,7 +108,7 @@ if ( $side_widget_area === '1' && $side_widget_class !== 'simple' || true === $l
                         ?>
                         <nav class="off-canvas-menu-container mobile-only" role="navigation">
 
-                            id="slide-out-widget-area		<?php
+                        <?php
                             $header_mobile_func = ( ! empty( $nectar_options['secondary-header-mobile-display'] ) ) ? $nectar_options['secondary-header-mobile-display'] : 'default';
                             $using_secondary    = ( ! empty( $nectar_options['header_layout'] ) && $header_format != 'left-header' ) ? $nectar_options['header_layout'] : ' ';
 
