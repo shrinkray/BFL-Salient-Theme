@@ -18,7 +18,7 @@ function child_theme_styles() {
     wp_enqueue_style( 'bfl-style', get_stylesheet_directory_uri() . '/dist/app.css', array(), wp_get_theme()->get('Version') );
 
 }
-add_action( 'wp_enqueue_scripts', 'child_theme_styles' );
+add_action( 'wp_enqueue_scripts', 'child_theme_styles', 9999 );
 
 function child_theme_scripts() {
 
