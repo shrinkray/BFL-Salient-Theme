@@ -26,3 +26,32 @@ function child_theme_scripts() {
 
 }
 add_action( 'wp_enqueue_scripts', 'child_theme_scripts' );
+
+/**
+ * ACF STYLES
+ * Add a few styles to aid use of ACF in this theme
+ * @return void
+ *
+ */
+
+function my_acf_admin_head() {
+    ?>
+    <style>
+
+        .acf-repeater.-block > table > tbody > tr > td {
+            border-top: #8cb1ff solid 2px;
+        }
+        .acf-repeater.-block > table > tbody > tr:nth-child(even) > td:nth-child(2) {
+            background-color: #f3f6ff;
+        }
+        .acf-row-number {
+            padding: 4px 8px;
+            background: white;
+            border-radius: 50%;
+            color: #0052fc;
+        }
+    </style>
+    <?php
+}
+
+add_action('acf/input/admin_head', 'my_acf_admin_head');
