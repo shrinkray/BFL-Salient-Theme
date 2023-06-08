@@ -119,8 +119,52 @@ main {
 }
 
 // Gutenberg tables
-.wp-block-table {
-  td  {
-    font-size: 1.4rem !important;
+
+body {
+  :not(.woocommerce-cart) {
+    .main-content {
+      table {
+        tr {
+          th {
+            background-color: #f5f5f5;
+          }
+          &:nth-child(2n+1) {
+           background-color: #eee !important;
+          }
+          td {
+            font-size: 1.2rem !important;
+          }
+        }
+      }
+    }
   }
+}
+.wp-block-table {
+  table {
+    tr {
+      th {
+        background-color: #f5f5f5;
+      }
+      &:nth-child(2n+1) {
+        background-color: #e0e0e0 !important;
+      }
+      td {
+        font-size: 1.2rem !important;
+      }
+    }
+  }
+}
+
+
+#slide-out-widget-area .ocm-dropdown-arrow
+{
+  transition: transform .5s cubic-bezier(.215,.61,.355,1);
+  position: absolute;
+  right: -6px;
+  top: 10px;
+  transform: translateY(-50%);
+  cursor: pointer;
+  height: 50px;
+  width: 250px;
+  line-height: 0;
 }
