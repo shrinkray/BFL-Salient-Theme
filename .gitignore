@@ -9,7 +9,7 @@
 !.gitignore
 
 node_modules
-
+/css/build/off-canvas/core.css
 
 # Disallow large filetypes
 *.hqx
@@ -45,3 +45,4 @@ node_modules
 *.wmv
 *.avi
 *.zip
+
