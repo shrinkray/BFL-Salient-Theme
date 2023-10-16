@@ -1,4 +1,22 @@
 <?php 
+/*
+Plugin Name: Disable TGM Plugin Activation Notices
+Description: Dismisses notices about recommended plugins.
+Version: 2014.03.27
+Author: khromov
+Author URI: http://profiles.wordpress.org/khromov/
+License: GPL2
+*/
+
+add_filter('get_user_metadata', function($val, $object_id, $meta_key, $single)
+{
+    if($meta_key === 'tgmpa_dismissed_notice')
+        return true;
+    else
+        return null;
+
+}, 10, 4);
+
 
 add_action( 'wp_enqueue_scripts', 'salient_child_enqueue_styles', 100);
 
