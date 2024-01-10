@@ -169,7 +169,12 @@ body {
   line-height: 0;
 }
 
+// Fix for Qubely row overlay
 .hero--is-overlay >.qubely-row-overlay {
     opacity: 0.54;
     background-color: #FFF;
+}
+.footer--is-overlay >.qubely-row-overlay {
+    opacity: 0.71;
+    background-color: 7F0000;
 }
