@@ -33,14 +33,14 @@ function salient_child_enqueue_styles() {
 // Enqueue child theme styles and scripts
 function child_theme_styles() {
 
-    wp_enqueue_style( 'bfl-style', get_stylesheet_directory_uri() . '/dist/app.css', array(), wp_get_theme()->get('Version') );
+    wp_enqueue_style( 'bfl-styles', get_stylesheet_directory_uri() . '/dist/bfl-styles.css', array(), wp_get_theme()->get('Version') );
 
 }
 add_action( 'wp_enqueue_scripts', 'child_theme_styles', 9999 );
 
 function child_theme_scripts() {
 
-    wp_enqueue_script( 'bfl-scripts', get_stylesheet_directory_uri() . '/dist/app.js', array('jquery'), true );
+    wp_enqueue_script( 'bfl-scripts', get_stylesheet_directory_uri() . '/dist/bfl-scripts.js', array('jquery'), true );
 
 }
 add_action( 'wp_enqueue_scripts', 'child_theme_scripts' );
